@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Montañeros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-container">
+                <!-- <button class="menu-toggle" aria-label="Abrir menú"> -->
+                    <div class="hamburger">
+                        <input class="checkbox" type="checkbox" />
+                        <svg fill="none" viewBox="0 0 50 50" height="45" width="45">
+                            <path
+                                class="lineTop line"
+                                stroke-linecap="round"
+                                stroke-width="4"
+                                stroke="black"
+                                d="M6 11L44 11"
+                            ></path>
+                            <path
+                                stroke-linecap="round"
+                                stroke-width="4"
+                                stroke="black"
+                                d="M6 24H43"
+                                class="lineMid line"
+                            ></path>
+                            <path
+                                stroke-linecap="round"
+                                stroke-width="4"
+                                stroke="black"
+                                d="M6 37H43"
+                                class="lineBottom line"
+                            ></path>
+                        </svg>
+                    </div>   
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <img src="assets/logo_2024.png" alt="Logo de Montañeros">
+                    <h1 style="display: flex;" class="logo-text">Montañeros</h1>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="hermana-aurina.html">Hermana Aurina</a>
+                <a href="campamento-verano.html">Campamento de verano</a>
+                <a href="acampadas.html">Acampadas</a>
+                <a href="contacto.html" style="background-color: #4CAF50; border-radius: 5px; border: 2px transparent white; padding: 7px;">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Contacto</h2>
+            <p>Encuentra toda la información para contactarnos y seguirnos en redes sociales.</p>
+        </section>
+        <section class="section contact-info">
+            <h3>Información de Contacto</h3>
+            <p>Asociación Juvenil Montañeros Santo Ángel de Albacete</p>
+            <p>Hermanos Jiménez 31, 02004 - Albacete, España</p>
+            <p>Email: montasalbacete@gmail.com</p>
+            <p>Contacto (Álvaro): 658 46 88 23</p>
+        </section>
+        <section class="section social-media">
+            <h3>Síguenos en Redes Sociales</h3>
+            <div class="social-media-container">
+                <div class="social-media-item" data-url="https://www.instagram.com/montanerossantoangel">
+                    <img src="assets/instagram-logo.png" alt="Logo de Instagram">
+                    <h4>Instagram</h4>
+                    <a href="https://www.instagram.com/montanerossantoangel" target="_blank" rel="noopener noreferrer">@montanerossantoangel</a>
+                </div>
+                <div class="social-media-item" data-url="https://www.facebook.com/msaalbacete">
+                    <img src="assets/facebook-logo.png" alt="Logo de Facebook">
+                    <h4>Facebook</h4>
+                    <a href="https://www.facebook.com/msaalbacete" target="_blank" rel="noopener noreferrer">/msaalbacete</a>
+                </div>
+                <div class="social-media-item" data-url="https://www.tiktok.com/@montanerossa">
+                    <img src="assets/tiktok-logo.png" alt="Logo de TikTok">
+                    <h4>TikTok</h4>
+                    <a href="https://www.tiktok.com/@montanerossa" target="_blank" rel="noopener noreferrer">@montanerossa</a>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h3>Nuestra Ubicación</h3>
+            <div class="map-container">
+                <iframe
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.7348831760513!2d-1.8689444847291016!3d38.99219997955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU5JzMxLjkiTiAxwrA1MicwMC4yIlc!5e0!3m2!1ses!2ses!4v1620000000000!5m2!1ses!2ses">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.social-media-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const url = item.getAttribute('data-url');
+                window.open(url, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

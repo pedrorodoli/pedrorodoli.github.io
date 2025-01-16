@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campamento de Verano - Montañeros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-container">
+                <!-- <button class="menu-toggle" aria-label="Abrir menú"> -->
+                    <div class="hamburger">
+                        <input class="checkbox" type="checkbox" />
+                        <svg fill="none" viewBox="0 0 50 50" height="45" width="45">
+                            <path
+                                class="lineTop line"
+                                stroke-linecap="round"
+                                stroke-width="4"
+                                stroke="black"
+                                d="M6 11L44 11"
+                            ></path>
+                            <path
+                                stroke-linecap="round"
+                                stroke-width="4"
+                                stroke="black"
+                                d="M6 24H43"
+                                class="lineMid line"
+                            ></path>
+                            <path
+                                stroke-linecap="round"
+                                stroke-width="4"
+                                stroke="black"
+                                d="M6 37H43"
+                                class="lineBottom line"
+                            ></path>
+                        </svg>
+                    </div>   
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <img src="assets/logo_2024.png" alt="Logo de Montañeros">
+                    <h1 style="display: flex;" class="logo-text">Montañeros</h1>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="hermana-aurina.html">Hermana Aurina</a>
+                <a href="campamento-verano.html" style="background-color: #4CAF50; border-radius: 5px; border: 2px transparent white; padding: 7px;">Campamento de verano</a>
+                <a href="acampadas.html">Acampadas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Campamento de Verano</h2>
+            <p>¡Vive la aventura más emocionante del año con Montañeros!</p>
+        </section>
+        <section class="section">
+            <h3>Fechas y Lugar</h3>
+            <p>Del 28 de junio al 7 de julio en La Casita (Casas de Juan Nuñez)</p>
+        </section>
+        <section class="section">
+            <h3>Actividades</h3>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <img src="https://placehold.co/300x200" alt="Talleres">
+                    <h4>Talleres</h4>
+                    <p>Talleres de todo tipo entretenidos y divertidos</p>
+                </div>
+                <div class="activity-card">
+                    <img src="assets/fotoscampamento/piscina.png" alt="Piscina">
+                    <h4>Piscina</h4>
+                    <p>Tiempo libre con piscina <br>Acordáos de echaros el bañador</p>
+                </div>
+                <div class="activity-card">
+                    <img src="assets/fotoscampamento/gymkanas.JPG" alt="Gymkanas">
+                    <h4>Gymkanas</h4>
+                    <p>Gymkanas alrededor de todas las instalaciones</p>
+                </div>
+                <div class="activity-card">
+                    <img src="assets/fotoscampamento/temas.JPG" alt="Temas y oraciones">
+                    <h4>Temas y oraciones</h4>
+                    <p>Momentos de reflexión y aprendizaje junto a los monitores y el resto de patrullas del campamento</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h3>Campamento 2024</h3>
+            <div class="carousel"> 
+                <button class="carousel-control prev">&#10094;</button>
+                <div class="carousel-images" id="carousel2024">
+                    <img src="assets/fotoscampamento/camp24/IMG_2997.JPG" alt="Foto 2024-2">
+                    <img src="assets/fotoscampamento/camp24/IMG_3265.JPG" alt="Foto 2024-3">
+                    <img src="assets/fotoscampamento/camp24/IMG_3326.JPG" alt="Foto 2024-4">
+                    <img src="assets/fotoscampamento/camp24/IMG_3364.JPG" alt="Foto 2024-5">
+                    <img src="assets/fotoscampamento/camp24/IMG_3662.JPG" alt="Foto 2024-6">
+                    <img src="assets/fotoscampamento/camp24/IMG_4093.JPG" alt="Foto 2024-7">
+                    <img src="assets/fotoscampamento/camp24/1.jpg" alt="Foto 2024-8">
+                    <img src="assets/fotoscampamento/camp24/IMG_4106.JPG" alt="Foto 2024-9">
+                </div>
+                <button class="carousel-control next">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>Campamento 2023</h3>
+            <div class="carousel">
+                <button class="carousel-control prev">&#10094;</button>
+                <div class="carousel-images" id="carousel2023">
+                    <img src="assets/fotoscampamento/camp23/IMG_6180.png" alt="Foto 2023-1">
+                    <img src="https://placehold.co/800x400" alt="Foto 2023-2">
+                    <img src="https://placehold.co/800x400" alt="Foto 2023-3">
+                </div>
+                <button class="carousel-control next">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
